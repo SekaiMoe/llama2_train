@@ -1,3 +1,4 @@
+import os
 import sentencepiece as spm
 
 # 设置训练文件的路径和输出模型名
@@ -10,3 +11,4 @@ spm.SentencePieceTrainer.train(input=input_file, model_prefix=model_prefix, voca
 
 # 这将生成两个文件：'spm_model.model' 和 'spm_model.vocab'
 # '.model' 文件是训练好的模型，'.vocab' 文件包含词汇表
+
